@@ -13,7 +13,7 @@
 */
 Node* createNode(int keyValue)
 {
-	Node* newNode = (Node*)malloc(sizeof(Node));
+	Node* newNode = (Node*)malloc(sizeof(Node)); //Allocate memory for new node
 	newNode->left = NULL;
 	newNode->right = NULL;
 	newNode->key = keyValue;
