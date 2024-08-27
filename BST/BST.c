@@ -14,7 +14,7 @@
 Node* createNode(int keyValue)
 {
 	Node* newNode = (Node*)malloc(sizeof(Node)); //Allocate memory for new node
-	newNode->left = NULL;
+	newNode->left = NULL; 
 	newNode->right = NULL;
 	newNode->key = keyValue;
 	
@@ -31,6 +31,7 @@ Node* createNode(int keyValue)
 */
 Node* searchBST(Node* root, int keyValue)
 {
+	//If can't find the key, return NULL. If we found the key, return the node pointer.
 	if(root == NULL || root->key == keyValue){
 		return root;
 	}
